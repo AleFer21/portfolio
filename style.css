@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-de-fondo: #D2E3C8;
+    --color-de-letra: #222222;
+    --color-de-letra2: #464646;
+    --color-verde1: #4F6F52;
+    --color-verde2: #739072;
+    --color-verde3: #86A789;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+.container {
+    padding: 16px;
+}
+
+.sobreMi__titulo,
+.skills__titulo,
+.hobbies__titulo,
+.formacion__titulo,
+.proyectos__titulo,
+.contacto__titulo {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.sobreMi__titulo--texto,
+.skills__titulo--texto,
+.hobbies__titulo--texto,
+.formacion__titulo--texto,
+.proyectos__titulo--texto,
+.contacto__titulo--texto {
+    color: var(--color-de-letra2);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+
+.sobreMi__titulo--subrayado,
+.skills__titulo--subrayado,
+.hobbies__titulo--subrayado,
+.formacion__titulo--subrayado,
+.proyectos__titulo--subrayado,
+.contacto__titulo--subrayado {
+    width: 80px;
+    height: 4px;
+    background: var(--color-verde2);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* Cabecera */
+
+.header {
+    position: relative;
+    padding: 1rem;
+    background-color: var(--color-verde1);
+    transition: .3s;
+}
+
+.header.sticky {
+    background-color: var(--color-verde1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.nav__lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.nav__elemento {
+    margin: 0.5rem 0;
+}
+
+.nav__elemento a {
+    text-decoration: none;
+    display: block;
+    color: var(--color-de-letra);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav__elemento a:hover {
+    background-color: var(--color-verde3);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.icon {
+    color: var(--color-de-letra);
+    background-color: var(--color-verde1);
+    border: none;
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Seccion Presentacion*/
+
+.presentacion {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.presentacion__img {
+    width: 120px;
+    height: 110px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.presentacion__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.presentacion__titulo {
+    color: var(--color-de-letra2);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    margin-top: 16px;
+}
+
+.presentacion__texto {
+    color: var(--color-de-letra2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.presentacion__media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-verde1);
+    font-size: 3rem;   
+}
+
+.presentacion__media a:hover {
+    color: var(--color-verde2);
+    transform: scale(1.2);
+    transition: trasnform 0.3s ease;
+}
+
+/*Seccion Sobre mi */
+
+.sobreMi__parrafo {
+    color: var(--color-de-letra2);
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+}
+
+/*Skills y Hobbies*/
+
+.skills__lista,
+.hobbies__lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.skills__icono,
+.hobbies__icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-verde1);
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.skills__texto,
+.hobbies__texto {
+    color: var(--color-de-letra2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*Formación Académica y Proyectos*/
+
+.formacion__lista,
+.proyectos__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.formacion__elemento,
+.proyectos__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Centra la imagen horizontalmente */
+    text-align: left; /* Asegura que el texto se mantenga alineado a la izquierda */
+    gap: 8px;
+}
+
+.formacion__elemento--img, 
+.proyectos__elemento--img {
+    width: 100%;
+    max-width: 296px;
+    height: auto;
+    object-fit: contain;
+}
+
+.formacion__elemento--titulo,
+.proyectos__elemento--titulo {
+    margin-left: 0; /* Asegura que el texto esté alineado al borde de la imagen */
+    color: var(--color-de-letra2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+}
+
+
+.formacion__elemento--texto,
+.proyectos__elemento--texto {
+    margin-left: 0;
+    color: var(--color-de-letra2);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.44px;
+}
+
+.proyectos__elemento {
+    margin-top: 16px;
+}
+
+.proyectos__media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.proyectos__media a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-verde1);
+    font-size: 3rem;
+}
+
+.proyectos__media a:hover {
+    color: var(--color-verde3);
+    transition: trasnform 0.3s ease;
+}
+
+.proyectos__media--texto {
+    font-size: 1rem;
+}
+
+/*Contacto*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.contacto__texto {
+    color: var(--color-de-letra2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form div label {
+    display: block;
+    color: var(--color-verde1);
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 3px solid var(--color-verde1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-bottom: 2px solid var(--color-verde1);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 3px solid var(--color-verde3);
+}
+
+input::placeholder {
+    color: var(--color-de-letra2);
+}
+
+input:focus::placeholder {
+    color: var(--color-de-letra);
+    opacity: 1;
+}
+
+.contacto__elemento--boton {
+    border-radius: 8px;
+    background: var(--color-verde1);
+    padding: 10px 15px;
+    display: inline-block;
+    transition: trasnform 0.3s ease;
+}
+
+.contacto__elemento--boton:hover {
+    background: var(--color-verde3);
+    transform: scale(1.05);
+}
+
+.contacto__elemento--boton-texto {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--color-de-letra);
+}
+
+/*Footer*/
+
+.footer  {
+    background-color: var(--color-verde1);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-verde3);
+    font-size: 1.8rem;
+}
+
+.footer__links a:hover {
+    color: var(--color-verde2);
+    transform: scale(1.2);
+    transition: trasnform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+
+    .presentacion {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .presentacion__img {
+        width: 250px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .presentacion__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .formacion__lista,
+    .proyectos__lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .formacion__elemento,
+    .proyectos__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .nav__lista {
+        flex-direction: row;
+        width: auto;
+        text-align: left;
+    }
+
+    .nav__elemento {
+        margin: 0 1rem;
+    }
+
+    .nav__elemento a:hover {
+        background-color: transparent;
+        color: var(--color-verde3);
+        padding: 0;
+        border-radius: 0;
+        text-decoration: underline;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .presentacion__img {
+        width: 300px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .presentacion__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .skills__lista,
+    .hobbies__lista {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .formacion__lista,
+    .proyectos__lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .formacion__elemento,
+    .proyectos__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Centra la imagen horizontalmente */
+        text-align: left; /* Asegura que el texto se mantenga alineado a la izquierda */
+        gap: 8px;
+    }
+
+}

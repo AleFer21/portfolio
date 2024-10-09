@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d6efd">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Alejandro Fernández</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <h1 class="header__titulo">Alejandro Fernández</h1>
+            <button class="icon" href="javascript:void(0);" onclick="menu()" aria-label="Abrir menú de navegación">
+                <i class='bx bx-menu' aria-label="Icono de menú"></i>
+            </button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="nav__lista">
+                <li class="nav__elemento"><a href="#presentacion" class="#active">Inicio</a></li>
+                <li class="nav__elemento"><a href="#sobreMi">Sobre mí</a></li>
+                <li class="nav__elemento"><a href="#skills">Skills</a></li>
+                <li class="nav__elemento"><a href="#hobbies">Hobbies</a></li>
+                <li class="nav__elemento"><a href="#formacion">Formación</a></li>
+                <li class="nav__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="nav__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__img">
+                <img src="./assets/fotoAbout.jpg" alt="Retrato de Alejandro Fernández, desarrollador web">
+            </div>
+            <div class="presentacion__contenido">
+                <h2 class="presentacion__titulo">
+                    Hola, mi nombre es Alejandro Fernández y desarrollo paginas web.
+                </h2>
+                <p class="presentacion__texto">
+                    Tengo una formación en desarrolo web full stack y actualmente 
+                    formo parte del programa ONE de Oracle en Alura Latam.
+                </p>
+                <div class="presentacion__media">
+                    <a href="https://www.linkedin.com/in/dalefer21/" target="_blank" aria-label="Perfil de LinkedIn de Alejandro Fernández">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/AleFer21" target="_blank" aria-label="Perfil de GitHub de Alejandro Fernández">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.instagram.com/alejandrofernandez.21/" target="_blank" aria-label="Perfil de Instagram de Alejandro Fernández">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="./assets/CV.AlejandroFernandez.pdf" download="Cv-AlejandroFernández.pdf" target="_blank" aria-label="Curriculum Vitae de Alejandro Fernández">
+                        <i class='bx bxs-file-doc'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobreMi" id="sobreMi">
+            <div class="sobreMi__titulo">
+                <h2 class="sobreMi__titulo--texto">Sobre Mi</h2>
+                <div class="sobreMi__titulo--subrayado"></div>
+            </div>
+            <p class="sobreMi__parrafo">
+                Soy desarrollador full stack con dos años de experiencia en tecnologías 
+                como Java, Spring, JavaScript, HTML y CSS, y estoy en proceso de ampliar 
+                mis conocimientos en React. Cuento con formación en ingeniería industrial, 
+                lo que me ha brindado una sólida base en análisis y resolución de problemas.
+                He trabajado en proyectos grupales, como el desarrollo de una página de 
+                reservas de salones de eventos, lo que me ha permitido adquirir habilidades 
+                tanto técnicas como de trabajo en equipo. Me motiva la capacidad de la 
+                tecnología para mejorar la vida de las personas, y disfruto resolver problemas 
+                y aprender nuevas herramientas cuando es necesario. Soy una persona tranquila 
+                y orientada a encontrar soluciones eficientes.
+            </p>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills__titulo">
+                <h2 class="skills__titulo--texto">Skills</h2>
+                <div class="skills__titulo--subrayado"></div>
+            </div>
+            <ul class="skills__lista">
+                <li class="skills__elemento">
+                    <div class="skills__icono">
+                        <i class='bx bxl-html5'></i>
+                    </div>    
+                    <p class="skills__texto">HTML</p>
+                </li>
+                <li class="skills__elemento">
+                    <div class="skills__icono">
+                        <i class='bx bxl-css3' ></i>
+                    </div>                   
+                    <p class="skills__texto">CSS</p>
+                </li>
+                <li class="skills__elemento">
+                    <div class="skills__icono">
+                        <i class='bx bxl-javascript' ></i>
+                    </div>                   
+                    <p class="skills__texto">JavaScript</p>
+                </li>
+                <li class="skills__elemento">
+                    <div class="skills__icono">
+                        <i class='bx bxl-java' ></i>
+                    </div>                 
+                    <p class="skills__texto">Java</p>
+                </li>
+                <li class="skills__elemento">
+                    <div class="skills__icono">
+                        <i class='bx bxl-spring-boot' ></i>
+                    </div>
+                    <p class="skills__texto">Spring-boot</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <div class="hobbies__titulo">
+                <h2 class="hobbies__titulo--texto">Hobbies</h2>
+                <div class="hobbies__titulo--subrayado"></div>
+            </div>
+            <ul class="hobbies__lista">
+                <li class="hobbies__elemento">
+                    <div class="hobbies__icono">
+                        <i class='bx bx-football'></i>
+                    </div>    
+                    <p class="hobbies__texto">Fútbol</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <div class="hobbies__icono">
+                        <i class='bx bxs-basketball' ></i>
+                    </div>                   
+                    <p class="hobbies__texto">Basquet</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <div class="hobbies__icono">
+                        <i class='bx bx-cycling'></i>
+                    </div>                   
+                    <p class="hobbies__texto">Cycling</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <div class="hobbies__icono">
+                        <i class='bx bx-tv' ></i>
+                    </div>                 
+                    <p class="hobbies__texto">Series y Películas</p>
+                </li>
+                <li class="hobbies__elemento">
+                    <div class="hobbies__icono">
+                        <i class='bx bxs-pizza'></i>
+                    </div>
+                    <p class="hobbies__texto">Cocinar</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="formacion" id="formacion">
+            <div class="formacion__titulo">
+                <h2 class="formacion__titulo--texto">Formación Académica</h2>
+                <div class="formacion__titulo--subrayado"></div>
+            </div>
+            <ul class="formacion__lista">
+                <li class="formacion__elemento">
+                    <img class="formacion__elemento--img" src="./assets/certificado_Curso_Programacin_FullStack.png" alt="Logo de Egg Educación">
+                    <strong class="formacion__elemento--titulo">Desarrollo Web Full Stack</strong>
+                    <p class="formacion__elemento--texto">2022 - 2023 | Egg Educación</p>
+                </li>
+                <li class="formacion__elemento">
+                    <img class="formacion__elemento--img" src="./assets/certificadoCodoACodo.jpg" alt="Logo de Codo a Codo">
+                    <strong class="formacion__elemento--titulo">QA/Testing</strong>
+                    <p class="formacion__elemento--texto">2022 | Codo a Codo</p>
+                </li>
+                <li class="formacion__elemento">
+                    <img class="formacion__elemento--img" src="./assets/certificado_javascript.jpg" alt="Logo de Udemy">
+                    <strong class="formacion__elemento--titulo">JavaScript</strong>
+                    <p class="formacion__elemento--texto">2022 | Udemy</p>
+                </li>
+                <li class="formacion__elemento">
+                    <img class="formacion__elemento--img" src="./assets/certificadoJava.jpg" alt="Logo de Udemy">
+                    <strong class="formacion__elemento--titulo">Progamación Java Full Stack</strong>
+                    <p class="formacion__elemento--texto">2021 | Udemy</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <div class="proyectos__titulo">
+                <h2 class="proyectos__titulo--texto">Proyectos</h2>
+                <div class="proyectos__titulo--subrayado"></div>
+            </div>
+            <ul class="proyectos__lista">
+                <li class="proyectos__elemento">
+                    <img class="proyectos__elemento--img" src="./assets/encriptador.png" alt="Imagen de la web encriptador de textos">
+                    <strong class="proyectos__elemento--titulo">Encriptador de Textos</strong>
+                    <p class="proyectos__elemento--texto">Challenge Oracle</p>
+                    <div class="proyectos__media">
+                        <a href="https://github.com/AleFer21/encriptador" target="_blank" aria-label="Repositorio en GitHub del proyecto Encriptador de Textos">
+                            <i class='bx bxl-github'></i>
+                            <p class="proyectos__media--texto">Repositorio</p>
+                        </a>
+                        <a href="https://alefer21.github.io/encriptador/" target="_blank" aria-label="Demo del proyecto Encriptador de Textos">
+                            <i class='bx bxs-file-html'></i>
+                            <p class="proyectos__media--texto">Demo</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="proyectos__elemento">
+                    <img class="proyectos__elemento--img" src="./assets/quinchApp.png" alt="Imagen de la web QuinchApp">
+                    <strong class="proyectos__elemento--titulo">QuinchApp</strong>
+                    <p class="proyectos__elemento--texto">Proyecto Final Egg</p>
+                    <div class="proyectos__media">
+                        <a href="https://github.com/AleFer21/QuinchApp" target="_blank" aria-label="Repositorio en GitHub del proyecto QuinchApp">
+                            <i class='bx bxl-github'></i>
+                            <p class="proyectos__media--texto">Repositorio</p>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=Bru37_VMX0I" target="_blank" aria-label="Video del proyecto QuinchApp">
+                            <i class='bx bxl-youtube'></i>
+                            <p class="proyectos__media--texto">Video</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto__titulo">
+                <h2 class="contacto__titulo--texto">Contacto</h2>
+                <div class="contacto__titulo--subrayado"></div>
+            </div>
+            <p class="contacto__texto">
+                ¿Quieres contactarme?
+                Complete el siguiente formulario 
+                y me pondré en contacto con usted 
+                lo antes posible.
+            </p>
+            <form class="contacto__form" action="https://formsubmit.co/alejandrofernandez21.af@gmail.com" method="POST">  
+                <div>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                </div>        
+                <div>
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="contacto__elemento--boton-container">
+                    <button type="submit" class="contacto__elemento--boton">
+                        <span class="contacto__elemento--boton-texto">Enviar</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Desarrollo por Alejandro Fernández</p>
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/dalefer21/" target="_blank" aria-label="Perfil de LinkedIn de Alejandro Fernández">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/AleFer21" target="_blank" aria-label="Perfil de GitHub de Alejandro Fernández">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/alejandrofernandez.21/" target="_blank" aria-label="Perfil de Instagram de Alejandro Fernández">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
